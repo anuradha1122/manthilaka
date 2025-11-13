@@ -15,12 +15,11 @@ import c1Image from './assets/c1.png';
 import c2Image from './assets/c2.png';
 import c3Image from './assets/c3.png';
 
-// Import the AboutUs component
+
 import AboutUs from './components/AboutUs';
 import TimeLine from './components/TimeLine';
 
 
-// Home Component
 const Home = () => {
   const navigate = useNavigate();
 
@@ -99,7 +98,7 @@ const Home = () => {
 
   return (
     <div>
-      {/* Hero Section */}
+
       <div 
         className="position-relative"
         style={{
@@ -170,7 +169,7 @@ const Home = () => {
         </section>
       </div>
 
-      {/* Rest of your existing home page content */}
+   
       <section className="py-5">
         <div className="container">
           <div className="row align-items-center justify-content-between">
@@ -198,7 +197,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Research Section */}
+    
       <section className="py-5">
         <div className="container">
           <h2 className="text-center fw-bold mb-5" style={{color: 'hsla(201, 100%, 31%, 1)', fontSize: '2.5rem'}}>
@@ -223,7 +222,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Quote Section */}
       <section className="py-5 position-relative" style={{backgroundImage: `url(${quoteImage})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', minHeight: '50vh', display: 'flex', alignItems: 'center'}}>
         <div className="position-absolute top-0 start-0 w-100 h-100" style={{backgroundColor: 'hsla(201, 100%, 31%, 0.6)'}} />
         <div className="container position-relative z-1">
@@ -237,7 +235,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
+   
       <section className="py-5 bg-white" style={{ width: '100%' }}>
         <h2 className="fw-bold mb-5 text-center" style={{ color: 'hsla(201, 100%, 31%, 1)', fontSize: '2rem' }}>
           What Our Clients Say
@@ -267,7 +265,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Footer */}
+    
       <footer className="py-5 text-white position-relative" style={{backgroundImage: `url(${nanoImage})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}>
         <div className="position-absolute top-0 start-0 w-100 h-100" style={{backgroundColor: 'hsla(201, 100%, 31%, 1)'}} />
         <div className="container position-relative z-1">
@@ -344,7 +342,7 @@ function App() {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/timeline" element={<TimeLine />} />
 
-          {/* Add more routes for other pages as needed */}
+        
         </Routes>
       </div>
     </Router>
